@@ -1,17 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +22,95 @@
   to {
     transform: rotate(360deg);
   }
+}
+.appContainer {
+  background-color: #203A58;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 50%;
+  height: 30%;
+  border: 5px #309EC2 solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.displayContainer {
+  display: flex;
+  background-color: #309EC2;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btnContainer {
+  flex: 1;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 5px #309EC2 solid;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.btn {
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  outline: none;
+  background-color: #309EC2;
+  color: #203A58;
+  width: 80px;
+  height: 40px;
+
+}
+
+.btn:active {
+  outline: none;
+  background-color: #203A58;
+  border: #309EC2 1px solid;
+  color: #309EC2;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  background-color: rgba(205, 214, 219, 0.3);
+}
+
+.btn:disabled:active {
+  background-color: #FF5D5D;
+  color: #203A58;
+  border: none;
+}
+
+.display {
+  background-color: #309EC2;
+  width: 90%;
+  height: 50%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 20px;
+
+}
+
+.normal {
+  color: black;
+}
+
+.max {
+  color: #F10000;
 }

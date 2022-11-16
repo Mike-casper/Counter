@@ -11,7 +11,6 @@ function App() {
     const countReset=()=>{
         setCount(0)
     }
-
   return (
       <div className="appContainer">
           <div className="app">
